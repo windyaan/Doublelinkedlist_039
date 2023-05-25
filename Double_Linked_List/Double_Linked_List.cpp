@@ -50,7 +50,7 @@ void DoubleLinkedList::addNode() {
 		newNode->next = START;
 		if (START != NULL)
 			START->prev = newNode;
-		newNode->prev = newNode;
+		newNode->prev = NULL;
 		START = newNode;
 		return;
 	}
@@ -98,7 +98,7 @@ bool DoubleLinkedList::deleteNode(int rollNo) {
 }
 
 bool DoubleLinkedList::listEmpty() {
-	return(START == NULL);
+	return (START == NULL);
 }
 
 void DoubleLinkedList::ascending() {
@@ -118,7 +118,7 @@ void DoubleLinkedList::descending() {
 	if (listEmpty())
 		cout << "\List is empty" << endl;
 	else {
-		cout << "\nRecords in descending oreder of roll number are: " << endl;
+		cout << "\nRecords in descending order of roll number are: " << endl;
 		Node* currentNode = START;
 		while (currentNode->next != NULL)
 			currentNode = currentNode->next;
