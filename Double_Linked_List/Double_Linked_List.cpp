@@ -156,4 +156,9 @@ void DoubleLinkedList::searchData() {
 	cin >> num;
 	if (DoubleLinkedList::search(num, &prev, &curr) == false)
 		cout << "Record not found" << endl;
+	else {
+		cout << "\nRecord found" << endl;
+		cout << "\nRoll number: " << curr->noMhs << endl;
+		cout << "\nName: " << curr->name << endl;
+	}
 }
