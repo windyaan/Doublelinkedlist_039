@@ -200,9 +200,9 @@ int main() {
 				cout << "\nInvalid option" << endl;
 				break;
 			}
-			catch (esception& e) {
-				cout << "Check for the values entered." << endl;
-			}
+		}
+		catch (exception& e) {
+			cout << "Check for the values entered." << endl;
 		}
 	}
 }
